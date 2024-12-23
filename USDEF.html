@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('IMG/UDEF.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 100vh;
+            background-color: black;
+            position: relative;
+            display: flex;
+            justify-content: center; /* 가로 중앙 정렬 */
+            align-items: center; /* 세로 중앙 정렬 */
+            flex-direction: column; /* 버튼들을 세로로 배치 */
+        }
+
+        .button-container {
+            display: flex;
+            gap: 300px; /* 버튼들 사이의 간격 */
+            margin-top: 200px; /* 버튼을 조금 아래로 내리기 위해 margin-top 사용 */
+        }
+
+        /* 각 버튼 스타일 */
+        .button-container button {
+            width: 150px; /* 버튼 너비 */
+            height: 150px; /* 버튼 높이 */
+            border: none; /* 버튼 테두리 제거 */
+            background-color: transparent;
+            cursor: pointer; /* 마우스 포인터 변경 */
+            transition: transform 0.3s ease; /* 호버 시 애니메이션 */
+        }
+
+        /* 첫 번째 버튼에만 배경 이미지 적용 */
+        .button1 {
+            background-image: url('IMG/UD1.png'); /* 첫 번째 버튼의 배경 이미지 */
+            background-size: cover; /* 이미지가 버튼 크기에 맞게 조정됨 */
+            background-position: center; /* 이미지 중앙에 배치 */
+        }
+
+        /* 두 번째 버튼에만 배경 이미지 적용 */
+        .button2 {
+            background-image: url('IMG/UD2.png'); /* 두 번째 버튼의 배경 이미지 */
+            background-size: cover; /* 이미지가 버튼 크기에 맞게 조정됨 */
+            background-position: center; /* 이미지 중앙에 배치 */
+        }
+
+        /* 세 번째 버튼에만 배경 이미지 적용 */
+        .button3 {
+            background-image: url('IMG/UD3.png'); /* 세 번째 버튼의 배경 이미지 */
+            background-size: cover; /* 이미지가 버튼 크기에 맞게 조정됨 */
+            background-position: center; /* 이미지 중앙에 배치 */
+        }
+
+        /* 호버 효과 */
+        .button-container button:hover {
+            transform: scale(1.1); /* 호버 시 버튼 크기 확대 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <button class="button1"></button>
+        <button class="button2"></button>
+        <button class="button3"></button>
+    </div>
+
+</body>
+</html>

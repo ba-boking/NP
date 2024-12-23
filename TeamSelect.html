@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            background-image: url('IMG/backg.png');
+            background-size: cover; /* 배경 이미지를 화면을 덮도록 크기 조정 */
+            background-position: calc(100% + 15px) center; /* 배경 위치 조정 */
+            background-repeat: no-repeat; /* 이미지 반복 방지 */
+            margin: 0; /* 기본 마진 제거 */
+            height: 100vh; /* 화면 전체 높이를 사용 */
+            background-color: black;
+            position: relative; /* 자식 요소의 절대 위치 기준 */
+        }
+
+        button {
+            background: none; /* 배경 제거 */
+            border: none; /* 버튼 테두리 제거 */
+            padding: 0; /* 버튼 내 여백 제거 */
+            cursor: pointer; /* 마우스 포인터를 손 모양으로 변경 */
+            position: absolute; /* 절대 위치 설정 */
+        }
+
+        /* 버튼 1: 왼쪽 아래 */
+        button:nth-child(1) {
+            left: 0;
+            bottom: 0;
+        }
+
+        /* 버튼 2: 오른쪽 아래 */
+        button:nth-child(2) {
+            right: 0;
+            bottom: 0;
+        }
+
+        button img {
+            display: block; /* 이미지를 버튼 크기만큼만 보여주기 */
+            width: 100%; /* 이미지 크기를 버튼에 맞게 조정 */
+            height: auto; /* 이미지 비율 유지 */
+        }
+    </style>
+</head>
+<body>
+    <button onclick="redirectToPage()">
+        <img src="IMG/22Real.png" alt="Button Image 1">
+    </button>
+    <button onclick="redirectToPa2ge()">
+        <img src="IMG/21Real.png" alt="Button Image 2">
+    </button>
+    
+    <script>
+        function redirectToPage() {
+            window.location.href = 'USLoad.html';
+        }
+
+        function redirectToPa2ge() {
+            window.location.href = 'NKLoad.html';
+        }
+    </script>
+</body>
+</html>
